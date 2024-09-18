@@ -1,0 +1,26 @@
+#contact {
+    background-color: yellow;
+    padding: 50px 0;
+}
+.contact__title {
+    margin-bottom: 20px;
+}
+.contact__row {
+    display:  grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.contact__card {
+    border: 2px solid black;
+    padding: 10px;
+}
+@media (max-width: 1000px) {
+    .contact__row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .contact__row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

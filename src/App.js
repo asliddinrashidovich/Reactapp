@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomePage from "./pages/HomePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <HomePage />
 }
+
+// import LearningPage from "./pages/learningpage";
+// import SnippetRCC from "./components/Snippets/SnippetRCC";
+// import SnippetsPage from "./pages/SnippetPage";
+
+// function App() {
+//   return <LearningPage />
+// }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Asliddin sen katta odam bo'lasan</h1>
+//     </div>
+//   );
+// }
+
+// function App() {
+//   const description = React.createElement('p', {}, 'asliddin sen dunyodagi eng baxtli va eng obroli va oz sohasining eng  kuchli mutahasisi bolasan')
+//   const title = React.createElement('h1', {}, 'asliddin sen buyuk kelajak kutib turibti')
+//   const result = React.createElement('div', {class: 'App'}, title, description)
+//   return result
+// }
 
 export default App;
